@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+
+int main()
+{
+    char str[10],str1[10];
+    int i,j,c=0;
+    printf("Enter first string :- ");
+    gets(str);
+    
+    printf("Enter second string  :- ");
+    gets(str1);
+    
+    for(i=0;str[i]!='\0';i++)
+    {
+        c++;
+    }
+    
+   
+    
+    for(i=c,j=0;str1[j]!='\0';c++,j++)  
+    {
+       
+        str[c]=str1[j];
+    }
+    
+
+    
+    str[c]='\0';
+    
+    printf("%s",str);
+    
+    
+
+    return 0;
+}
